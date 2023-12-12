@@ -1,8 +1,288 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title> Resume </title>
-    </head>
-    <body>
-        In progress
-    </body>
+<style>
+    body {
+        font-family: Helvetica, sans-serif;
+        letter-spacing: 1px;
+        background-color: aliceblue;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: 100vh;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 20px;
+        background-color: #fff;
+    }
+
+    .headerContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .headerLogoContainer {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        justify-content: right;
+        align-items: center;
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .headerLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #22a1d4;
+        border-radius: 40px;
+        width: 80px;
+        height: 80px;
+        color: #000;
+        margin-right: 20px;
+    }
+
+    .headerDetails {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        padding-left: 10px;
+        width: 60%;
+    }
+
+    .name {
+        color: #22a1d4;
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 4px;
+    }
+
+    .place {
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        padding-bottom: 4px;
+    }
+
+    .phonenumber {
+        margin-left: 8px;
+    }
+
+    .email {
+        font-size: 20px;
+        padding-bottom: 4px;
+    }
+
+    .objectiveContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .titleContainer {
+        display: flex;
+        width: 20%;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: row;
+
+    }
+
+    .title {
+        font-weight: 700;
+        color: #22a1d4;
+    }
+
+    .timelineElement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        height: 100%;        
+    }
+
+    .timelineCircle {
+        display: flex;
+        width: 14px;
+        height: 16px;
+        border-radius: 8px;
+        border: 1px solid #000;
+    }
+
+    .timelineLine {
+        display: flex;
+        width: 1px;
+        height: 100%;
+        background-color: #000;
+    }
+
+    .objectiveDescription {
+        display: flex;
+        width: 60%;
+        height: 100%;
+        padding-bottom: 15px;
+        line-height: 20px;
+    }
+
+    .skillsContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .skillsDescription {    
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        height: 100%;
+        line-height: 20px;
+    }
+
+    .educationContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .educationDescription {   
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        line-height: 20px;
+        padding-bottom: 15px;
+    }
+    .project1Container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .project1Heading {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        font-weight: bold;
+        padding-bottom: 15px;
+    }
+
+    .project1Description {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        font-weight: normal;
+        padding-top: 10px;
+        line-height: 20px;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+</style>
+
+<head>
+    <title> Resume </title>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="headerLogoContainer">
+                <div class="headerLogo">ND</div>
+            </div>
+            <div class="headerDetails">
+                <div class="name">Nivya Dileep</div>
+                <div class="place">
+                    <div>Ernamkulam, India</div>
+                    <div class="phonenumber">+91-9207101474</div>
+                </div>
+                <div class="email">nivyadileep2000.eee@gmail.com</div>
+            </div>
+        </div>
+        <div class="objectiveContainer">
+            <div class="titleContainer">
+                <div class="title">OBJECTIVE</div>
+                <div class="timelineElement">
+                    <div class="timelineCircle"></div>
+                    <div class="timelineLine"></div>
+                </div>
+            </div>
+            <div class="objectiveDescription"> Goal-oriented EEE graduate with a solid foundation in electrical and
+                electronic principles, seeking an entry-level engineering position to contribute
+                technical expertise and innovative problem-solving skills. Hands-on
+                experience in circuit design, control systems, and software programming.
+                Eager to contribute to dynamic engineering projects.</div>
+        </div>
+        <div class="skillsContainer">
+            <div class="titleContainer">
+                <div class="title">SKILLS</div>
+                <div class="timelineElement">
+                    <div class="timelineCircle"></div>
+                    <div class="timelineLine"></div>
+                </div>
+            </div>
+            <div class="skillsDescription">
+                <div style="padding-right: 50px;">
+                    <ul>
+                        <li>Data analytics</li>
+                        <li>Market research</li>
+                        <li>HTML</li>
+                        <li>Digital marketing</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li> Leadsershjip</li>
+                        <li> Strong communication</li>
+                        <li> Team management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="educationContainer">
+            <div class="titleContainer">
+                <div class="title">
+                    EDUCATION
+                </div>
+                <div class="timelineElement">
+                    <div class="timelineCircle"></div>
+                    <div class="timelineLine"></div>
+                </div>
+            </div>
+            <div class="educationDescription">
+                <div>Mar Athanasisus College of Engineering, Kothamangalam</div>
+                <div>CGPA: 8.08</div>
+                <div>Electrical & Electronics Engineering</div>
+            </div>
+        </div>
+        <div class="project1Container">
+            <div class="titleContainer">
+                <div class="title">PROJECT1</div>
+                <div class="timelineElement">
+                    <div class="timelineCircle"></div>
+                    <div class="timelineLine"></div>
+                </div>
+            </div>
+            <div class="project1Heading">
+                <div> Title: Robust Control of Variable Speed BLDC Motor Drive Using PID
+                    Controller</div>
+                <div class="project1Description">
+                    <div class="underline"> Description:</div>
+                    <div>This project aimed to design, implement, and evaluate a control system for a
+                        Brushless DC (BLDC) motor drive capable of operating at variable speeds.
+                        The main focus was on achieving efficient control using a Proportional
+                        Integral-Derivative
+                        (PID) controller.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
 </html>
